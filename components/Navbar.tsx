@@ -43,7 +43,7 @@ const Navbar = () =>{
     return(
         <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-background px-4">
             <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between ">
-                <a href="/">
+                <Link href="/">
                     <motion.div 
                     initial={{opacity:1}} 
                     animate={{opacity:1}} 
@@ -63,7 +63,7 @@ const Navbar = () =>{
                         className="inline-flex bg-copyLight w-[10px] h-[4px]"></motion.span>
                         </h1>
                     </motion.div>
-                </a>
+                </Link>
                 <div 
                  className="hidden mdl:inline-flex items-center gap-7"
                 >
@@ -78,7 +78,7 @@ const Navbar = () =>{
                              animate={{y:0, opacity:1}}
                              transition={{duration:dur}}
                             >
-                                <span className="text-primaryLight">//</span> Home
+                                <span className="text-primaryLight">{"//"}</span> Home
                             </motion.li>
                         </Link>
                         <Link
@@ -91,7 +91,7 @@ const Navbar = () =>{
                              animate={{y:0, opacity:1}}
                              transition={{duration:dur, delay:del*1}}
                             >
-                                <span className="text-primaryLight">//</span> About
+                                <span className="text-primaryLight">{"//"}</span> About
                             </motion.li>
                         </Link>
                         <Link
@@ -104,7 +104,7 @@ const Navbar = () =>{
                              animate={{y:0, opacity:1}}
                              transition={{duration:dur, delay:del*2}}
                             >
-                                <span className="text-primaryLight">//</span> Experience
+                                <span className="text-primaryLight">{"//"}</span> Experience
                             </motion.li>
                         </Link>
                         <Link
@@ -117,7 +117,7 @@ const Navbar = () =>{
                              animate={{y:0, opacity:1}}
                              transition={{duration:dur, delay:del*3}}
                             >
-                                <span className="text-primaryLight">//</span> Projects
+                                <span className="text-primaryLight">{"//"}</span> Projects
                             </motion.li>
                         </Link>
                         <Link
@@ -130,7 +130,7 @@ const Navbar = () =>{
                              animate={{y:0, opacity:1}}
                              transition={{duration:dur, delay:del*4}}
                             >
-                                <span className="text-primaryLight">//</span> Contact
+                                <span className="text-primaryLight">{"//"}</span> Contact
                             </motion.li>
                         </Link>
                     </ul>
@@ -190,7 +190,7 @@ const Navbar = () =>{
                                             animate={{y:0, opacity:1}}
                                             transition={{duration:dur}}
                                             >
-                                                <span className="text-primaryLight">//</span> Home
+                                                <span className="text-primaryLight">{"//"}</span> Home
                                             </motion.li>
                                         </Link>
                                         <Link
@@ -203,7 +203,7 @@ const Navbar = () =>{
                                             animate={{y:0, opacity:1}}
                                             transition={{duration:dur, delay:del*1}}
                                             >
-                                                <span className="text-primaryLight">//</span> About
+                                                <span className="text-primaryLight">{"//"}</span> About
                                             </motion.li>
                                         </Link>
                                         <Link
@@ -216,7 +216,7 @@ const Navbar = () =>{
                                             animate={{y:0, opacity:1}}
                                             transition={{duration:dur, delay:del*2}}
                                             >
-                                                <span className="text-primaryLight">//</span> Experience
+                                                <span className="text-primaryLight">{"//"}</span> Experience
                                             </motion.li>
                                         </Link>
                                         <Link
@@ -229,7 +229,7 @@ const Navbar = () =>{
                                             animate={{y:0, opacity:1}}
                                             transition={{duration:dur, delay:del*3}}
                                             >
-                                                <span className="text-primaryLight">//</span> Projects
+                                                <span className="text-primaryLight">{"//"}</span> Projects
                                             </motion.li>
                                         </Link>
                                         <Link
@@ -242,7 +242,7 @@ const Navbar = () =>{
                                             animate={{y:0, opacity:1}}
                                             transition={{duration:dur, delay:del*4}}
                                             >
-                                                <span className="text-primaryLight">//</span> Contact
+                                                <span className="text-primaryLight">{"//"}</span> Contact
                                             </motion.li>
                                         </Link>
 

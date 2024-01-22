@@ -27,7 +27,7 @@ const About = () => {
             </p>
           </div>
           <h2 className="text-copyLightest text-sm -ml-4 py-1">&lt;/h3&gt;</h2>{" "}
-          <p><br></br>Here are some of the tools and software I"ve recently worked with:</p>
+          <p><br></br>Here are some of the tools and software I&apos;ve recently worked with:</p>
           <ul className="max-w-[500px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2 text-copyLight"><span className="text-textLighter text-2xl"><DiCodeBadge /></span>C++/C/Java (OOP)</li>
             <li className="flex items-center gap-2 text-copyLight"><span className="text-textLighter text-2xl"><DiCodeBadge /></span>Matlab (Machine/Deep Learning)</li>
