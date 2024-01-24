@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Typed from "typed.js";
 import Landing from "@/components/landing/Landing";
 
-export default function Home() {
+export default function land() {
   
   
   return (

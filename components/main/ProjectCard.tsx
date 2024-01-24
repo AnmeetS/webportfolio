@@ -1,6 +1,7 @@
 import {FaRegFolder} from "react-icons/fa";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import Link from "next/link";
 
 interface Props{
     title:string;
@@ -15,23 +16,23 @@ const ProjectCard = ({title, des,listItem,githubRedirect,genRedirect}: Props) =>
         <div className="flex justify-between items-center">
             <FaRegFolder className="text-4xl text-textLighter"/>
             <div className="flex justify-between items-center gap-2">
-                <a href={githubRedirect} target="_blank">  
+                <Link href={githubRedirect} target="_blank">  
                     <TbBrandGithub className="text-2xl hover:text-textLighter"/>
-                </a>
-                <a href={genRedirect} target="_blank">
+                </Link>
+                <Link href={genRedirect} target="_blank">
                     <RxOpenInNewWindow className="text-2xl hover:text-textLighter"/>
-                </a>
+                </Link>
             </div>
         </div>
         <div>
-            <h2 className="text-xl font-titleFont font-semibold tracking-wide group-hover:text-textLighter">
+            <h2 className="text-xl font-titleFont font-bold tracking-wide group-hover:text-textLighter">
                 {title}
             </h2>
-            <p className="text-sm mt-3">
+            <p className="text-sm mt-3 font-bodyFont">
                 {des}
             </p>
         </div>
-        <ul className="text-xs mdl:text-sm text-copyLightest flex items-center gap-2 justify-between flex-wrap">
+        <ul className="text-xs mdl:text-sm text-copyLightest flex items-center gap-2 justify-between flex-wrap font-monoFont">
             {
                 listItem.map((item,index) => (
                     <li key={index}>{item}</li>

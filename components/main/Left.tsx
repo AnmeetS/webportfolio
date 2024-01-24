@@ -3,6 +3,8 @@ import {
     SlSocialLinkedin, 
     SlSocialInstagram,
 } from "react-icons/sl";
+import Link from "next/link";
+import { TiSocialLinkedin } from "react-icons/ti";
 
 const Left = () =>{
     return(
@@ -12,27 +14,27 @@ const Left = () =>{
             <div
              className="flex flex-col gap-4"
             >
-                <a href="https://github.com/AnmeetS" target="_blank">
+                <Link href="https://github.com/AnmeetS" target="_blank">
                     <span 
                      className="w-10 h-10 text-xl bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
                     >
                         <TbBrandGithub />
                     </span>
-                </a>
-                <a href="https://www.linkedin.com/in/anmeets/" target="_blank">
+                </Link>
+                <Link href="https://www.linkedin.com/in/anmeets/" target="_blank">
                     <span 
-                     className="w-10 h-10 text-xl bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
+                     className="w-10 h-10 text-3xl bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
                     >
-                        <SlSocialLinkedin />
+                        <TiSocialLinkedin />
                     </span>
-                </a>
-                <a href="https://www.instagram.com/anmeetloaf/" target="_blank">
+                </Link>
+                <Link href="https://www.instagram.com/anmeetloaf/" target="_blank">
                     <span 
                      className="w-10 h-10 text-xl bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
                     >
                         <SlSocialInstagram />
                     </span>
-                </a>
+                </Link>
             </div>
             <div className="w-[2px] h-32 bg-textLighter"></div>
         </div>

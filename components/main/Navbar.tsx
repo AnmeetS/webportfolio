@@ -9,6 +9,7 @@ import {
     SlSocialLinkedin, 
     SlSocialInstagram,
 } from "react-icons/sl";
+import { TiSocialLinkedin } from "react-icons/ti";
 
 const oof = -50
 const dur = 0.5
@@ -21,7 +22,7 @@ const Navbar = () =>{
         e.preventDefault();
         setShowMenu(false);
         const href=e.currentTarget.href;
-        const targetId = href.replace(/.*\#/,"");
+        const targetId = href.replace(/.*\homepage#/,"");
         const elem = document.getElementById(targetId);
         elem?.scrollIntoView({
             behavior: "smooth",
@@ -41,15 +42,15 @@ const Navbar = () =>{
         }
     }
     return(
-        <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-background px-4">
-            <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between ">
+        <div className="w-full shadow-navbarShadow h-20 lg:h-[10vh] sticky top-0 z-40 bg-background/20 backdrop-blur-sm px-4">
+            <div className="max-w-container h-full mx-auto py-1 font-monoFont flex flex-col xs:flex-row items-center justify-between">
                 <Link href="/">
                     <motion.div 
                     initial={{opacity:1}} 
                     animate={{opacity:1}} 
                     transition={{duration:0.5}} 
                     >
-                        <h1 className="font-robotoFont font-bold text-primaryLight text-2xl">AnmeetS.
+                        <h1 className="font-spaceFont font-bold text-primaryLight text-2xl">AnmeetS.
                         <span className="inline-flex bg-transparent w-[2px] h-[4px]"></span>
                         <motion.span 
                         initial={{ opacity: 0 }} // Start fully transparent
@@ -64,8 +65,9 @@ const Navbar = () =>{
                         </h1>
                     </motion.div>
                 </Link>
+                
                 <div 
-                 className="hidden mdl:inline-flex items-center gap-7"
+                 className="hidden lg:inline-flex items-center gap-7"
                 >
                     <ul className="flex text-[13px] gap-7">
                         <Link 
@@ -97,7 +99,7 @@ const Navbar = () =>{
                         <Link
                          href="#experience"
                          onClick={handleScrolll}
-                         className="flex items-center gap-1 font-medium text-textLight hover:text-textLighter  cursor-pointer duration-300 nav-link"
+                         className="flex items-center gap-1 font-medium text-textLight hover:text-textLighter cursor-pointer duration-300 nav-link"
                         >
                             <motion.li 
                              initial={{y:oof, opacity:0}}
@@ -123,7 +125,7 @@ const Navbar = () =>{
                         <Link
                          href="#contact"
                          onClick={handleScrolll}
-                         className="flex items-center gap-1 font-medium text-textLight hover:text-textLighter  cursor-pointer duration-300 nav-link"
+                         className="flex items-center gap-1 font-medium text-textLight hover:text-textLighter cursor-pointer duration-300 nav-link"
                         >
                             <motion.li 
                              initial={{y:oof, opacity:0}}
@@ -134,7 +136,7 @@ const Navbar = () =>{
                             </motion.li>
                         </Link>
                     </ul>
-                    <a href="/assets/Anmeet_S_Software_Resume.pdf" target="_blank">
+                    <Link href="/assets/Anmeet_S_Software_Resume.pdf" target="_blank">
                         <motion.button
                          initial={{opacity:0}}
                          animate={{opacity:1}}
@@ -143,36 +145,84 @@ const Navbar = () =>{
                         >
                             Resume
                         </motion.button>
-                    </a>
+                    </Link>
+                    <div className="hidden w-auto lg:flex xl:hidden items-center justify-between text-lg gap-2">
+                        <Link href="https://github.com/AnmeetS" target="_blank">
+                            <span 
+                            className="w-8 h-8 bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
+                            >
+                                <TbBrandGithub />
+                            </span>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/anmeets/" target="_blank">
+                            <span 
+                            className="w-8 h-8 bg-foreground rounded-full inline-flex items-center text-2xl justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
+                            >
+                                <TiSocialLinkedin />
+                            </span>
+                        </Link>
+                        <Link href="https://www.instagram.com/anmeetloaf/" target="_blank">
+                            <span 
+                            className="w-8 h-8 bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
+                            >
+                                <SlSocialInstagram />
+                            </span>
+                        </Link>
+                    </div>
                 </div>
                 {/* Mobile Icon Section */}
-                <div
-                onClick={()=>setShowMenu(true)}
-                 className="w-6 h-5 flex flex-col justify-between items-center mdl:hidden text-4xl text-textLight cursor-pointer overflow-hidden group"
-                >
-                    <span
-                     className="w-full h-[2px] bg-primaryLight inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"
-                    ></span>
-                    <span
-                     className="w-full h-[2px] bg-primaryLight inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"
-                    ></span>
-                    <span
-                     className="w-full h-[2px] bg-primaryLight inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300"
-                    ></span>
+                <div className="flex flex-row lg:hidden items-center justify-between gap-6">
+                    <div className="w-auto flex items-center justify-between text-lg gap-2">
+                        <Link href="https://github.com/AnmeetS" target="_blank">
+                            <span 
+                            className="w-8 h-8 bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
+                            >
+                                <TbBrandGithub />
+                            </span>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/anmeets/" target="_blank">
+                            <span 
+                            className="w-8 h-8 bg-foreground rounded-full inline-flex items-center text-2xl justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
+                            >
+                                <TiSocialLinkedin />
+                            </span>
+                        </Link>
+                        <Link href="https://www.instagram.com/anmeetloaf/" target="_blank">
+                            <span 
+                            className="w-8 h-8 bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
+                            >
+                                <SlSocialInstagram />
+                            </span>
+                        </Link>
+                    </div>
+                    <div
+                    onClick={()=>setShowMenu(true)}
+                    className="w-6 h-5 flex flex-col justify-between items-center lg:hidden text-4xl text-textLight cursor-pointer overflow-hidden group"
+                    >
+                        <span
+                        className="w-full h-[2px] bg-primaryLight inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"
+                        ></span>
+                        <span
+                        className="w-full h-[2px] bg-primaryLight inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"
+                        ></span>
+                        <span
+                        className="w-full h-[2px] bg-primaryLight inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300"
+                        ></span>
+                    </div>
                 </div>
+                
                 {
                     showMenu && (
                         <div 
                          ref={(node)=>(ref.current=node)}
                          onClick={handleClick}
-                         className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
-                         
+                         className="absolute lg:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
                         >
                             <motion.div 
                             initial={{x:20,opacity:0}}
                             animate={{x:0,opacity:1}}
-                            transition={{duration:0.1}}
-                            className="w-[50%] h-full overflow-y-scroll scrollbarHide bg-foreground flex flex-col items-center px-4 py-10 relative"
+                            transition={{duration:0.5}}
+                            className="w-[75%] sm:w-[300px] h-full overflow-y-scroll scrollbarHide bg-foreground flex flex-col items-center px-4 py-10 relative"
                             >
                                 <MdOutlineClose 
                                     onClick={()=>setShowMenu(false)}
@@ -245,9 +295,9 @@ const Navbar = () =>{
                                                 <span className="text-primaryLight">{"//"}</span> Contact
                                             </motion.li>
                                         </Link>
-
                                     </ul>
-                                    <a href="/assets/Anmeet_S_Software_Resume.pdf"target="_blank">
+                                    <Link className="py-2"
+                                    href="/assets/Anmeet_S_Software_Resume.pdf"target="_blank">
                                         <motion.button
                                          initial={{y:oof, opacity:0}}
                                          animate={{y:0, opacity:1}}
@@ -256,58 +306,8 @@ const Navbar = () =>{
                                         >
                                             Resume
                                         </motion.button>
-                                    </a>
-                                    <div className="-ml-6">
-                                        <motion.a 
-                                         initial={{x:20,opacity:0}}
-                                         animate={{x:0, opacity:1}}
-                                         transition={{delay:0.3, ease:"easeIn"}}
-                                         href="https://github.com/AnmeetS" 
-                                         target="_blank"
-                                        >
-                                            <span 
-                                             className="w-10 h-10 text-xl bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
-                                            >
-                                                <TbBrandGithub />
-                                            </span>
-                                            
-                                        </motion.a>
-                                        <motion.a 
-                                         initial={{x:20,opacity:0}}
-                                         animate={{x:0, opacity:1}}
-                                         transition={{delay:0.4, ease:"easeIn"}}
-                                         href="https://www.linkedin.com/in/anmeets/"
-                                         target="_blank"
-                                        >
-                                            <span 
-                                             className="w-10 h-10 text-xl bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
-                                            >
-                                                <SlSocialLinkedin />
-                                            </span>
-                                        </motion.a>
-                                        <motion.a 
-                                         initial={{x:20,opacity:0}}
-                                         animate={{x:0, opacity:1}}
-                                         transition={{delay:0.5, ease:"easeIn"}}
-                                         href="https://www.instagram.com/anmeetloaf/" 
-                                         target="_blank"
-                                        >
-                                            <span 
-                                             className="w-10 h-10 text-xl bg-foreground rounded-full inline-flex items-center justify-center hover:text-primaryLight cursor:pointer hover:-translate-y-2 transition-all duration-300"
-                                            >
-                                                <SlSocialInstagram />
-                                            </span>
-                                        </motion.a>
-                                    </div>
+                                    </Link>
                                 </div>
-                                <motion.a 
-                                initial={{opacity:0}}
-                                animate={{opacity:1}}
-                                transition={{delay:1.2,ease:"easeIn"}}
-                                className="text-sm w-72 tracking-wideset text-textLighter text-center mt-4"
-                                href="mailt0:as2sekho@uwaterloo.ca">
-                                    <p>as2sekho@uwaterloo.ca</p>
-                                </motion.a>
                             </motion.div>   
                         </div>
                     )

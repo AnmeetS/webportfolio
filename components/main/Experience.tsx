@@ -3,6 +3,7 @@ import TitleCreator from "./TitleCreator"
 import Inqsys from "./workinfo/Inqsys"
 import FRCwork from "./workinfo/FRCwork"
 import Webpulse from "./workinfo/Webpulse"
+import { motion } from "framer-motion"
 
 const Experience = () => {
     const [workInqsys, setworkInqsys] = React.useState(true);
@@ -27,13 +28,17 @@ const Experience = () => {
   return (
     <section
      id="experience"
-     className="max-w-containerxs mx-auto px-4 py-10 lgl:py-24 h-full"
+     className="max-w-containerxs mx-auto px-4 py-24 lgl:py-32"
     >
         <TitleCreator title="My Experience"/>
         <div
          className="w-full mt-10 flex flex-col md:flex-row gap-16"
         >
-            <ul className="md:w-40 flex flex-col">
+            <motion.ul 
+            initial={{opacity:0, y:10, x:-10}}
+            whileInView={{opacity:1, y:0, x:0}}
+            transition ={{duration:0.5,delay:0.2}}
+            className="md:w-40 flex flex-col font-bodyFont font-semibold">
                 <li 
                  onClick={handleInqsys} 
                  className={`${
@@ -64,12 +69,16 @@ const Experience = () => {
                 >
                     WebPulse Canada
                 </li>
-            </ul>
-            <div className="shadow-navbarShadow p-4 bg-foreground rounded-lg border border-border">
+            </motion.ul>
+            <motion.div 
+            initial={{opacity:0, y:10, x:10}}
+            whileInView={{opacity:1, y:0, x:0}}
+            transition ={{duration:0.5,delay:0.2}}
+            className="shadow-navbarShadow p-4 bg-foreground rounded-lg border border-border">
                 {workInqsys && <Inqsys/>}
                 {workFRCwork && <FRCwork/>}
                 {workWebpulse && <Webpulse/>}
-            </div>
+            </motion.div>
         </div>
     </section>
   )
