@@ -18,7 +18,7 @@ export default function Home() {
         <title>Anmeet&apos;s Website</title>
         <meta name="description" content="Created By Anmeet Sekhon" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/qr.ico" />
+        <link rel="icon" href="/code.ico" />
       </Head>
       <main className="w-screen h-screen font-bodyFont bg-background text-copyLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-background scrollbar-thumb-border ">
         <Navbar />

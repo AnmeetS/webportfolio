@@ -6,8 +6,10 @@ import Link from "next/link";// Import your global CSS file
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 import Landing from "@/components/landing/Landing";
+import CarouselTest from "@/components/carousel/CarouselTest";
 
-export default function Home() {
+
+export default function land() {
   
   
   return (
@@ -16,13 +18,11 @@ export default function Home() {
         <title>Anmeet&apos;s Website</title>
         <meta name="description" content="Created By Anmeet Sekhon" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/code.ico" />
+        <link rel="icon" href="/qr.ico" />
       </Head>
       <main className="w-screen h-screen font-bodyFont bg-background text-copyLight ">
         <div className="w-screen h-screen font-bodyFont bg-background text-copyLight relative">
-          <Pattern />
-          <Grid />
-          <Landing />
+          <CarouselTest />
         </div>
       </main>
     </>

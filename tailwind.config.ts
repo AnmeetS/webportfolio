@@ -5,6 +5,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite-react/lib/**/*.js",
   ],
   theme: {
     maxWidth:{
@@ -25,6 +26,7 @@ const config: Config = {
         xl: "1340px",
       },
       fontFamily: {
+        body: ['poppins', 'sans-serif'],
         bodyFont: ['SF UI Text','sans-serif'],
         titleFont: ['SF Pro Display', 'Sans-Serif'],
         spaceFont: ["Space Grotesk", "sans-serif"],
@@ -75,6 +77,7 @@ const config: Config = {
   },
   plugins: [
     require('tailwind-scrollbar'),
+    require('flowbite/plugin'),
   ],
 };
 export default config;

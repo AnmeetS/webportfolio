@@ -1,40 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 My Personal Website Journey 🚀
 
-## Getting Started
+Hello and welcome to the GitHub repository of my personal website! This project is a testament to my growth and learning journey in software development. Below, I dive into the inspiration, process, challenges, and future plans for this project. 
 
-First, run the development server:
+## Inspiration ✨
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I've always been passionate about software development, and for the past few months I have been heavily focused on broadening my skills and developing a foundation in software development. In doing so, I have spent ALOT of time developing programs with various use cases. However, I realized that my current method of sharing my projects wasn't so great. Until now, i have been using Wordpress, a web content management system, to develop and change my website and a week ago, I decided to move away from WordPress and design, code and deploy a website of my own.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The Process 🛠️
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+After spending probably about 6-8 hours scrolling the web to try and find good examples of websites, along with some tutorials to help me develop something usable, i was finally able to visualise the website i wanted to create. My scouring of the internet had allowed me to get create a simple (kinda ugly) website with Next.js, TypeScript and Tailwind. Why TypeScript? As it turns out, TypeScript is a superset of JavaScript that allows you to define the types of variables and parameters, which is not only something I feel like I understand (based on my foundational understanding of programming) but also, saying I developed something in TypeScript just sounds cool. Now I'm sure there is alot more to it than what my tiny brain can comprehend but thats for a future project. Also, I used Next.js because of how friendly it is for new developers, or well in my eyes atleast. From what I learnt, with plain old React you need to install extra dependencies and set up a couple of functions to get page routing working while Next allows you to set up different pages simply based on where they are (I didnt want to spend any longer working on the website). Additionally, with Next, it makes it alot easier to handle server side and client side components at the same time. So, thats what I went with.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Challenges I Ran Into 🚧
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The biggest challenge of making this website was, aside from the loading bar, creating the grid that you see on the main page. The reason this was so difficult is because I honestly just didnt know how much I could really do with the React components. BUT, once I figured it out, I was able to wrap my head around the concept pretty well. If you're interested in hearing more about how the grid background works, make sure to check out the blog section of my website (coming soon hopefully)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## What I Learned 📚
 
-## Learn More
+- Implementing good SEO practices, like SSR and lazy loading of images.
+- Working with Next.js, Tailwind CSS, and TypeScript.
+- Utilizing UI libraries like Flowbite to streamline development.
 
-To learn more about Next.js, take a look at the following resources:
+## What's Next 🔮
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Developing a standalone page for each project, detailing the creation process.
+- Creating an archive page with exclusive data on all my projects.
+- Introducing a blog section connected through a backend server for faster page rendering. (Allowing me to explore SQL)
+- Integrating OpenCV to enable hand-tracking for mouse movement on my website (similiar to my recent project), offering an interactive experience with 3D model on my website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Stay Connected 📢
 
-## Deploy on Vercel
+This journey is far from over! I'm excited to keep updating this repository as I add more features and content. Your feedback and contributions are always welcome.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Thank you for visiting, and let's make something amazing together! 🌟
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+**Note:** The website is still a work in progress, so some features mentioned may be coming soon. Stay tuned!

@@ -8,7 +8,7 @@ export default function Home() {
   return (        
   <>
     <Head>
-      <title>Anmeet&apos;s Website</title>
+      <title>lmk if u noticed this!</title>
       <meta name="description" content="Created By Anmeet Sekhon" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/qr.ico" />
