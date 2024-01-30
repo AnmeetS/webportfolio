@@ -22,7 +22,7 @@ const Navbar = () =>{
         e.preventDefault();
         setShowMenu(false);
         const href=e.currentTarget.href;
-        const targetId = href.replace(/.*\homepage#/,"");
+        const targetId = href.replace(/.*\#/,"");
         const elem = document.getElementById(targetId);
         elem?.scrollIntoView({
             behavior: "smooth",
