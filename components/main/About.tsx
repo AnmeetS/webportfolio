@@ -6,6 +6,7 @@ import { anmeet } from "@/public/assets";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
+import CurrentlyPlaying from "../spotify/CurrentlyPlaying";
 
 const About = () => {
   const ref = useRef<string | any>("");
@@ -46,7 +47,7 @@ const About = () => {
           initial={{ opacity: 0, y: 10, x: -10 }}
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full lgl:w-2/3 text-base text-copyLight font-bodyFont flex flex-col"
+          className="relative w-full lgl:w-2/3 text-base text-copyLight font-bodyFont flex flex-col"
         >
           <h2 className="text-copyLightest text-md -ml-2 py-1 font-mono">
             &lt;h3&gt;
@@ -161,7 +162,7 @@ const About = () => {
                   <span className="absolute w-full h-[1px] bg-textLighter left-0 bottom-0.5 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
                 </span>{" "}
               </Link>
-               sparking a passion of all things embeded systems, (Mechanical,
+              sparking a passion of all things embeded systems, (Mechanical,
               Electrical and Software Design).
             </div>
             <div>
@@ -266,8 +267,18 @@ const About = () => {
               SolidWorks
             </li>
           </ul>
+          <div>
+            <div className="absolute bottom-6 right-0 hidden mdl:block lgl:hidden">
+              <CurrentlyPlaying />
+            </div>
+          </div>
+          <div className=" flex justify-center">
+            <div className="py-6 hidden sm:block mdl:hidden">
+              <CurrentlyPlaying />
+            </div>
+          </div>
         </motion.div>
-        <div className="h-auto w-full lgl:w-1/3 flex-col lgl:pt-24">
+        <div className="h-auto w-full lgl:w-1/3 flex flex-col gap-24 lgl:pt-24">
           <motion.div
             initial={{ opacity: 0, y: 10, x: 10 }}
             whileInView={{ opacity: 1, y: 0, x: 0 }}
@@ -286,6 +297,9 @@ const About = () => {
             </div>
             <div className="hidden lgl:inline-flex w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
           </motion.div>
+          <div className="hidden lgl:block">
+            <CurrentlyPlaying />
+          </div>
         </div>
       </div>
     </section>

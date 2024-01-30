@@ -5,3 +5,24 @@
 .active{
     color:#9e87c5;
 }
+
+.ticker {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .ticker-content {
+    display: inline-block;
+    animation: ticker 20s linear infinite;
+    padding-left: 100%; /* Initial offscreen positioning */
+  }
+  
+  @keyframes ticker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

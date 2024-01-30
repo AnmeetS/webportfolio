@@ -1,1 +1,0 @@
-import NextNProgress from "nextjs-progressbar";

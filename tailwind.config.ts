@@ -17,10 +17,10 @@ const config: Config = {
     extend: {
       screens: {
         xs: "345px",
-        sm: "374px",
-        sml: "500px",
+        sm: "380px",
+        sml: "520px",
         md: "667px",
-        mdl: "820px",
+        mdl: "760px",
         lg: "920px",
         lgl: "1024px",
         xl: "1340px",
@@ -32,6 +32,7 @@ const config: Config = {
         spaceFont: ["Space Grotesk", "sans-serif"],
         robotoFont: ["Roboto Mono", "sans-serif"],
         monoFont: ['SF Mono','sans-serif'],
+        urbanFont: ['Urbanist', 'sans-serif'],
       },
       boxShadow: {
         navbarShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",

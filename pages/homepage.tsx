@@ -3,7 +3,7 @@ import Navbar from "@/components/main/Navbar";
 import Right from "@/components/main/Right";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Banner from "@/components/main/Banner";
+import Banner from "@/components/main/Home";
 import About from "@/components/main/About";
 import Experience from "@/components/main/Experience";
 import Projects from "@/components/main/Projects";
