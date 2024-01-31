@@ -49,7 +49,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="relative w-full lgl:w-2/3 text-base text-copyLight font-bodyFont flex flex-col"
         >
-          <h2 className="text-copyLightest text-md -ml-2 py-1 font-mono">
+          <h2 className="text-copyLightest -ml-2 py-1 font-mono">
             &lt;h3&gt;
           </h2>
           <div className="hidden sml:flex flex-col gap-4 relative pl-4 font-bodyFont font-thin">

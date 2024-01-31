@@ -421,7 +421,7 @@ const Projects = () => {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="w-full xl:w-1/2 flex flex-col gap-6 items-center text-center z-10 xl:mr-16 xl:text-right text-left"
+                    className="w-full xl:w-1/2 flex flex-col gap-6 items-center text-center z-10 xl:mr-16 xl:text-right"
                   >
                     <p className="font-monoFont text-textLighter text-sm tracking-wide -mb-4">
                       Software Development

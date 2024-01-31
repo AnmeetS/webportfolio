@@ -20,7 +20,6 @@ export default function land() {
         </div>
       </main>
     </>
-    
   );
 }
 
