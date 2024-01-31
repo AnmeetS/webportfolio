@@ -8,6 +8,7 @@ const currentlyPlayingHandler = async (req: NextApiRequest, res: NextApiResponse
   } catch (error) {
     console.error('Error fetching currently playing track:', error);
     res.status(500).json({ error: 'Internal Server Error' });
+    console.log(error);
   }
 };
 

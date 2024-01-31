@@ -64,8 +64,7 @@ const Projects = () => {
                       <ul className="text-xs md:text-sm font-mono tracking-wide flex gap-2 md:gap-5 justify-between text-copyLighter rounded-lg bg-background/75 p-2">
                         <li>Typescript |</li>
                         <li>Nextjs |</li>
-                        <li>Tailwind |</li>
-                        <li>React</li>
+                        <li>Tailwind</li>
                       </ul>
                       <div className="text-2xl gap-4 flex rounded-full p-2 bg-background/75">
                         <Link
