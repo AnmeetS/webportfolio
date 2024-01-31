@@ -22,7 +22,7 @@ const WorkCreator = ({role, location, timeline, listItem,}: Props) => {
         <p className="text-sm mt-1 font-medium font-monoFont text-copyLighter">
             {timeline}
         </p>
-        <ul className="mt-3 flex flex-col gap-2 font-bodyFont">
+        <ul className="mt-3 flex flex-col gap-2 font-bodyFont font-thin">
             {
                 listItem.map((item,index) => (
                     <li 

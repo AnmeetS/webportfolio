@@ -91,25 +91,24 @@ const Banner = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-sm sm:text-base md:max-w-[550px] text-copyLight font-md flex flex-col"
+          className="text-sm sm:text-base md:max-w-[550px] text-copyLight flex flex-col font-bodyFont"
         >
           <span>
             I am a Mechatronics Engineer passionate about robotics, machine
             learning, and embedded systems.
           </span>{" "}
           <span>
-            I&apos;m currently working on{" "}
+            Along with creating aesthetic yet functional machines and web applications,
+            i&apos;m currently working on{" "}
             <Link
-              href="https://github.com/AnmeetS/webportfolio"
+              href="https://github.com/AnmeetS/Ball-Balancer"
               target="_blank"
             >
               <span className="text-textLighter inline-flex relative cursor-pointer overflow-x-hidden group">
-                this website!
+                a robot!
                 <span className="absolute w-full h-[1px] bg-textLighter left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
               </span>
             </Link>{" "}
-            as well as creating aesthetic yet functional machines and
-            web applications.
           </span>
         </motion.span>
         <div className=" flex flex-col sml:flex-row items-left justify-between gap-6">
