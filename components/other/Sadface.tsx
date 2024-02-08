@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { sadface } from "@/public/assets";
 import Image from "next/image";
+import { sadface2 } from "@/public/assets";
 
 const Sadface = () => {
   return (
@@ -14,8 +15,8 @@ const Sadface = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-foreground/20 backdrop-blur-md rounded-lg p-6">
-                  <h1 className="font-titleFont text-4xl xs:text-5xl sm:text-6xl sml:text-7xl md:text-8xl mdl:text-9xl  flex flex-col text-center">
-                    <Image src={sadface} alt="Theres Supposed to be a silly sadface here"/>
+                  <h1 className="font-titleFont text-4xl xs:text-5xl sm:text-6xl sml:text-7xl md:text-8xl mdl:text-9xl flex flex-col text-center">
+                    <Image src={sadface2} alt="Theres Supposed to be a silly sadface here" className="w-80"/>
                     <span className="text-error font-bold text-4xl xs:text-5xl sm:text-6xl sml:text-7xl md:text-8xl">
                       UHOH! 
                     </span>
@@ -29,7 +30,7 @@ const Sadface = () => {
               </motion.div>
               <div className="w-full flex flex-row items-center justify-center gap-4">  
                   <div>
-                      <Link href="/homepage" target="">
+                      <Link href="/" target="">
                       <motion.button
                       initial={{ y: 10, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}

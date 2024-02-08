@@ -79,12 +79,11 @@ const Banner = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="text-5xl lgl:text-6xl font-semibold flex flex-col font-titleFont"
+          className="text-6xl lgl:text-8xl font-semibold flex flex-col font-titleFont"
         >
           Anmeet Sekhon
           <span className="text-4xl lgl:text-6xl text-border mt-2 lgl:mt-4 h-[4.5rem] sml:h-auto">
             <span ref={elRef}></span>
-            {/*Lorem ipsum dolor sit amet.*/}
           </span>
         </motion.h1>
         <motion.span
@@ -98,18 +97,17 @@ const Banner = () => {
             learning, and embedded systems.
           </span>{" "}
           <span>
-            I&apos;m currently working on{" "}
+            Along with creating aesthetic yet functional machines and web applications,
+            i&apos;m currently working on{" "}
             <Link
-              href="https://github.com/AnmeetS/webportfolio"
+              href="https://github.com/AnmeetS/Ball-Balancer"
               target="_blank"
             >
               <span className="text-textLighter inline-flex relative cursor-pointer overflow-x-hidden group">
-                this website!
+                a robot!
                 <span className="absolute w-full h-[1px] bg-textLighter left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
               </span>
             </Link>{" "}
-            as well as creating aesthetic yet functional machines and
-            web applications.
           </span>
         </motion.span>
         <div className=" flex flex-col sml:flex-row items-left justify-between gap-6">

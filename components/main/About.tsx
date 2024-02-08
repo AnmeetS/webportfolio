@@ -42,16 +42,14 @@ const About = () => {
       className="max-w-containerSmall mx-auto py-24 lgl:py-32 flex flex-col gap-8 px-4"
     >
       <TitleCreator title="About Me" />
-      <div className="flex flex-col lgl:flex-row gap-10 h-full relative">
+      <div className="flex flex-col lgl:flex-row gap-10 relative">
         <motion.div
           initial={{ opacity: 0, y: 10, x: -10 }}
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="relative w-full lgl:w-2/3 text-base text-copyLight font-bodyFont flex flex-col"
         >
-          <h2 className="text-copyLightest -ml-2 py-1 font-mono">
-            &lt;h3&gt;
-          </h2>
+          <h2 className="text-copyLightest -ml-2 py-1 font-mono">&lt;h3&gt;</h2>
           <div className="hidden sml:flex flex-col gap-4 relative pl-4 font-bodyFont font-thin">
             <span className="absolute w-[2px] bg-border top-0 bottom-0 left-0"></span>
             <div>
@@ -140,7 +138,7 @@ const About = () => {
               for completing machine/deep learning courses from Mathworks!
             </div>
           </div>
-          <div className="flex sml:hidden flex-col gap-4 relative pl-4 text-sm lh">
+          <div className="flex sml:hidden flex-col gap-4 relative pl-4 text-sm font-thin">
             <span className="absolute w-[2px] bg-border top-0 bottom-0 left-0"></span>
             <div>
               Hey! I&apos;m Anmeet, a
@@ -225,48 +223,50 @@ const About = () => {
           <h2 className="text-copyLightest text-md -ml-2 py-1 font-mono">
             &lt;/h3&gt;
           </h2>{" "}
-          <div>
-            <br></br>Here are some of the tools and software I&apos;ve recently
-            worked with:
+          <div className="text-sm sml:text-base">
+            <div className="pt-2">
+              Here are some of the tools and software I&apos;ve
+              recently worked with:
+            </div>
+            <ul className="max-w-[500px] text-xs sml:text-sm grid grid-cols-2 gap-2 mt-6 font-mono">
+              <li className="flex items-center gap-2 text-copyLight">
+                <span className="text-textLighter text-2xl">
+                  <DiCodeBadge />
+                </span>
+                C++ / C / Java (OOP)
+              </li>
+              <li className="flex items-center gap-2 text-copyLight">
+                <span className="text-textLighter text-2xl">
+                  <DiCodeBadge />
+                </span>
+                Matlab (Machine / Deep Learning)
+              </li>
+              <li className="flex items-center gap-2 text-copyLight">
+                <span className="text-textLighter text-2xl">
+                  <DiPython />
+                </span>
+                Python (OpenCV, Pytorch)
+              </li>
+              <li className="flex items-center gap-2 text-copyLight">
+                <span className="text-textLighter text-2xl">
+                  <DiJavascript1 />
+                </span>
+                Javascript / Typescript
+              </li>
+              <li className="flex items-center gap-2 text-copyLight">
+                <span className="text-textLighter text-2xl">
+                  <DiReact />
+                </span>
+                React.js / Next.js
+              </li>
+              <li className="flex items-center gap-2 text-copyLight">
+                <span className="text-textLighter text-lg">
+                  <FaScrewdriverWrench />
+                </span>
+                SolidWorks
+              </li>
+            </ul>
           </div>
-          <ul className="max-w-[500px] text-sm grid grid-cols-2 gap-2 mt-6">
-            <li className="flex items-center gap-2 text-copyLight">
-              <span className="text-textLighter text-2xl">
-                <DiCodeBadge />
-              </span>
-              C++ / C / Java (OOP)
-            </li>
-            <li className="flex items-center gap-2 text-copyLight">
-              <span className="text-textLighter text-2xl">
-                <DiCodeBadge />
-              </span>
-              Matlab (Machine / Deep Learning)
-            </li>
-            <li className="flex items-center gap-2 text-copyLight">
-              <span className="text-textLighter text-2xl">
-                <DiPython />
-              </span>
-              Python (OpenCV, Pytorch)
-            </li>
-            <li className="flex items-center gap-2 text-copyLight">
-              <span className="text-textLighter text-2xl">
-                <DiJavascript1 />
-              </span>
-              Javascript / Typescript
-            </li>
-            <li className="flex items-center gap-2 text-copyLight">
-              <span className="text-textLighter text-2xl">
-                <DiReact />
-              </span>
-              React.js / Next.js
-            </li>
-            <li className="flex items-center gap-2 text-copyLight">
-              <span className="text-textLighter text-lg">
-                <FaScrewdriverWrench />
-              </span>
-              SolidWorks
-            </li>
-          </ul>
           <div>
             <div className="absolute bottom-6 right-0 hidden mdl:block lgl:hidden">
               <CurrentlyPlaying />
@@ -279,6 +279,7 @@ const About = () => {
           </div>
         </motion.div>
         <div className="h-auto w-full lgl:w-1/3 flex flex-col gap-24 lgl:pt-24">
+          <div className="hidden sml:block">
           <motion.div
             initial={{ opacity: 0, y: 10, x: 10 }}
             whileInView={{ opacity: 1, y: 0, x: 0 }}
@@ -297,6 +298,9 @@ const About = () => {
             </div>
             <div className="hidden lgl:inline-flex w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
           </motion.div>
+
+          </div>
+          
           <div className="hidden lgl:block">
             <CurrentlyPlaying />
           </div>

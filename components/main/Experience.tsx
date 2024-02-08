@@ -30,7 +30,7 @@ const Experience = () => {
      id="experience"
      className="max-w-containerxs mx-auto px-4 py-24 lgl:py-32"
     >
-        <TitleCreator title="My Experience"/>
+        <TitleCreator title="My Experiences"/>
         <div
          className="w-full mt-10 flex flex-col md:flex-row gap-16"
         >
