@@ -45,11 +45,11 @@ const ProjectItem = ({
           transition={{ duration: 0.5, delay: 0.2 }}
           className="w-full mdl:w-1/2 flex flex-col gap-6 mdl:items-start items-center z-10 mdl:ml-16 bg-background/20 mdl:bg-transparent backdrop-blur-sm mdl:backdrop-blur-0 p-4 rounded-xl"
         >
-          <span className="font-monoFont text-textLighter text-sm tracking-wide -mb-4">
+          <span className="font-monoFont text-textLighter text-sm tracking-wide -mb-4 bg-background/50 p-1 rounded-md">
             {type}
           </span>
           <span className="text-3xl font-bold font-titleFont">{title}</span>
-          <span className="bg-foreground/50 text-sm sml:text-base p-2 md:p-6 rounded-md flex flex-col shadow-navbarShadow">
+          <span className="bg-foreground text-sm sml:text-base p-2 md:p-6 rounded-md flex flex-col shadow-navbarShadow backdrop-blur-lg">
             {info}
           </span>
           <ul className="text-xs sml:text-sm font-mono tracking-wide flex gap-2 justify-between text-copyLighter rounded-lg bg-foreground/50 mdl:bg-background/75 p-2">

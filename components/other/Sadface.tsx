@@ -30,7 +30,7 @@ const Sadface = () => {
               </motion.div>
               <div className="w-full flex flex-row items-center justify-center gap-4">  
                   <div>
-                      <Link href="/homepage" target="">
+                      <Link href="/" target="">
                       <motion.button
                       initial={{ y: 10, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}

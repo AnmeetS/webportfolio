@@ -7,16 +7,12 @@ const RubiksCubeProject = () => {
     <ProjectItem
       type="Software Development"
       title="Rubik&apos;s Cube Solving Robot"
-      info="Created over the span of 3 months for our course
-      project, this robot uses a combination of
-      color/ultrasonic sensors and motor encoders to fully
-      scan and solve a 3x3 Rubik&apos;s Cube.
-      Implemented into the code are interrupts, non-trivial
-      functions, timers, and of course the solving
-      algorithm."
+      info="A lego robot created by a group of 4 as a course culminating project.
+      Utilized a combination of sensors and motor encoders, as well as non-trivial
+      functions, timers, and a solving algorithm to scan, manipulate and solve a 3x3 Rubik&apos;s Cube autonomously."
       listItem={["C++ |", "Robot C |", "Python"]}
       imageSrc={rubiksSolver}
-      imageHref="https://"
+      imageHref="https://https://drive.google.com/file/d/1aWYzpqJ5ZphrVBlnGU5uONs3m6xx0Rhn/view?usp=sharing"
       iconLinks={[ { icon: 'youtube', href: 'https://https://drive.google.com/file/d/1aWYzpqJ5ZphrVBlnGU5uONs3m6xx0Rhn/view?usp=sharing' }, { icon: 'openNewWindow', href: '/underconstruction' },]}
     />
   </div>

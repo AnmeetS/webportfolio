@@ -79,19 +79,18 @@ const Banner = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="text-5xl lgl:text-6xl font-semibold flex flex-col font-titleFont"
+          className="text-6xl lgl:text-8xl font-semibold flex flex-col font-titleFont"
         >
           Anmeet Sekhon
           <span className="text-4xl lgl:text-6xl text-border mt-2 lgl:mt-4 h-[4.5rem] sml:h-auto">
             <span ref={elRef}></span>
-            {/*Lorem ipsum dolor sit amet.*/}
           </span>
         </motion.h1>
         <motion.span
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-sm sm:text-base md:max-w-[550px] text-copyLight flex flex-col font-bodyFont"
+          className="text-sm sm:text-base md:max-w-[550px] text-copyLight font-md flex flex-col"
         >
           <span>
             I am a Mechatronics Engineer passionate about robotics, machine

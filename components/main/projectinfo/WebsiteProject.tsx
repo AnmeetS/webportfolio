@@ -7,8 +7,8 @@ const WebsiteProject = () => {
       <ProjectItem
         type="Web Development"
         title="This Website!"
-        info="Created in the span of a week this website allows me to showcase my portfolio of technical skills and project experiences.
-            It also illustrates my understanding of SEO optimization, with features like image lazy loading and server-side rendering."
+        info=" A website developed to showcase my technical skills, work experience and projects in an aesthetic and easily readable way.
+        Utilized common SEO optimization practices such as image lazy loading and server-side rendering."
         listItem={["Typescript |", "Nextjs |", "Tailwind"]}
         imageSrc={landing}
         imageHref="https://github.com/AnmeetS/webportfolio"
