@@ -68,7 +68,6 @@ const ProjectItem = ({
                   key={index}
                   className="hover:text-textLighter duration-300"
                   href={href}
-                  target="_blank"
                 >
                   <IconComponent />
                 </Link>
