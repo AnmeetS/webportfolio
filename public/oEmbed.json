@@ -1,4 +1,11 @@
 {
-    "type": "photo" 
-  }
-  
+  "type": "rich",
+  "title": "Anmeet Sekhon",
+  "author_name": "Anmeet Sekhon",
+  "provider_name": "Anmeet Sekhon's Website",
+  "provider_url": "https://anmeetsekhon.com",
+  "author_url": "https://anmeetsekhon.com",
+  "description": "Anmeet Sekhon is a mechatronics engineer who specializes in creating exceptional machines and robots.",
+  "url": "https://anmeetsekhon.com",
+  "image": "https://anmeetsekhon.com/assets/images/hello-world-html-code-768x384.webp"
+}

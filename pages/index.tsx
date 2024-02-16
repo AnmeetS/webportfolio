@@ -26,7 +26,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="/assets/images/hello-world-html-code-768x384.webp"
+          content="/images/Anmeet-1.jpg"
         />
         <meta property="og:url" content="https://anmeetsekhon.com/" />
         <meta property="og:type" content="article" />
