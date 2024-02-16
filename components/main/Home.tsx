@@ -112,17 +112,15 @@ const Banner = () => {
         </motion.span>
         <div className=" flex flex-col sml:flex-row items-left justify-between gap-6">
           <Link
-            href="#contact"
-            onClick={handleScrolll}
-            className="cursor-pointer duration-300 nav-link flex-row"
+            href="/assets/Anmeet_S_Software_Resume.pdf" target="_blank"
           >
             <motion.button
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.9 }}
-              className="w-40 h-14 text-sm font-monoFont border border-textLighter rounded-md text-textLighter tracking-wide hover:bg-foreground duration-300"
+              className="w-32 h-12 text-lg font-titleFont font-bold border-2 border-textLighter rounded-md text-textLighter tracking-wide hover:bg-foreground duration-300"
             >
-              Contact Me
+              Resume
             </motion.button>
           </Link>
           <div className="hidden">

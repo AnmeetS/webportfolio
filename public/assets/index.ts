@@ -9,7 +9,6 @@ import sadface2 from "./images/323e3b47f07fa1fb0a4b2ecb03b2c965.png";
 import rubiksSolver from "./images/Screenshot 2024-01-23 185030.jpg";
 import landing from "./images/landing.jpg";
 import toyotaChallenge from "./images/Screenshot-2023-11-10-013653.png";
-
 import placeholder from "./images/pngtree-gray-network-placeholder-png-image_3416659.jpg";
 import HANDyMouse from "./images/Screenshot 2024-02-04 230441.jpg";
 
