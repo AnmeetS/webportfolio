@@ -15,6 +15,31 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      <meta charSet="utf-8" />
+        <meta name="description" content="Created By Anmeet Sekhon" />
+        {/*Embed Tags*/}
+        {/* OpenGraph Tags */}
+        <meta property="og:title" content="Anmeet Sekhon" />
+        <meta
+          property="og:description"
+          content="Anmeet Sekhon is a mechatronics engineer who specializes in creating exceptional machines and robots."
+        />
+        <meta
+          property="og:image"
+          content="/assets/images/hello-world-html-code-768x384.webp"
+        />
+        <meta property="og:url" content="https://anmeetsekhon.com/" />
+        <meta property="og:type" content="article" />
+
+        {/* oEmbed Link */}
+        <link type="application/json+oembed" href="/oEmbed.json" />
+
+        {/* Additional Tags */}
+        {/* Theme Color for Sidebar */}
+        <meta name="theme-color" content="#9e87c5" />
+
+        {/* Twitter Card for Large Image Display */}
+        <meta name="twitter:card" content="summary_large_image" />
 
         {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

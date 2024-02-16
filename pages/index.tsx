@@ -14,6 +14,7 @@ import Footer from "@/components/main/Footer";
 export default function Home() {
   return (
     <>
+    
       <main className="w-screen h-screen font-bodyFont bg-background text-copyLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-background scrollbar-thumb-border ">
         <Navbar />
         <div className="w-full h-[90vh] xl:flex items-center gap-20 justify-start">
