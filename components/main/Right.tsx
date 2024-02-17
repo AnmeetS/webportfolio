@@ -4,11 +4,11 @@ import Link from "next/link";
 const Right = () =>{
     return(
         <div
-         className="w-full h-full flex flex-col items-center justify-end gap-16 text-textLight"
+         className="w-full h-full flex flex-col items-center justify-end gap-16 text-textLight z-20"
         >
             <Link href="mailto:as2sekho@uwaterloo.ca">
                 <p
-                 className="text-sm rotate-90 w-72 tracking-wide text-textLight"
+                 className="text-sm rotate-90 w-72 tracking-wide text-textLight pointer-events-auto"
                 >
                     as2sekho@uwaterloo.ca
                 </p>

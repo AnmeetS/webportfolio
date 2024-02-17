@@ -12,7 +12,7 @@ const Left = () =>{
          className="w-full h-full flex flex-col items-center justify-end gap-4 text-textLight"
         >
             <div
-             className="flex flex-col gap-4"
+             className="flex flex-col gap-4 pointer-events-auto"
             >
                 <Link href="https://github.com/AnmeetS" target="_blank">
                     <span 
