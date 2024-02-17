@@ -18,12 +18,14 @@ export default function Home() {
         <Navbar />
         <div className="w-full h-[90vh] xl:flex items-center gap-20 justify-start">
           <motion.div
-           initial={{ opacity: 0 }}
-           animate={{ opacity: 1 }}
-           transition={{delay:1, duration:1}}
-           className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0 z-20 pointer-events-none"
+          >
             <Left />
           </motion.div>
+
           <motion.div className="h-full mx-auto p-4">
             <Banner />
             <About />
@@ -34,10 +36,11 @@ export default function Home() {
             <Footer />
           </motion.div>
           <motion.div
-           initial={{ opacity: 0 }}
-           animate={{ opacity: 1 }}
-           transition={{delay:1, duration:1}}
-           className="hidden xl:inline-flex w-32 h-full fixed right-4 bottom-0">
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="hidden xl:inline-flex w-32 h-full fixed right-4 bottom-0 z-20 pointer-events-none"
+          >
             <Right />
           </motion.div>
         </div>
