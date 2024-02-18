@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="/assets/images/homepage.jpg"
+          content="/assets/images/homepagewithoutstars.jpg"
         />
         <meta property="og:url" content="https://anmeetsekhon.com/" />
         <meta property="og:type" content="article" />
