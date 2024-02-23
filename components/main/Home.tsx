@@ -4,7 +4,7 @@ import Typed from "typed.js";
 import Link from "next/link";
 import ScrollAnimation from "@/public/assets/ScrollAnimation.json";
 import Lottie from "lottie-react";
-import ModelViewer from "../3D/ModelViewer";
+import HomepageModel from "../3D/HomepageModel";
 
 const Banner = () => {
   const elRef = useRef(null);
@@ -70,7 +70,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="hidden xl:flex absolute -left-52 -top-28 w-[188%] h-[110%] z-10"
       >
-        <ModelViewer />
+        <HomepageModel />
       </motion.div>
       <div className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-full justify-center z-30">
         <div className="py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-full justify-center ">

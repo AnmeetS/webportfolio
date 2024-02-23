@@ -5,7 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 import CanvasLoader from "./CanvasLoader";
 import { PolygonalShape } from './Shapes';
 
-const ModelViewer = () => {
+const HomepageModel = () => {
   return (
     <div className="w-full h-full z-10">
       <Canvas
@@ -15,7 +15,7 @@ const ModelViewer = () => {
       >
         <ambientLight intensity={0.5} />
         <Suspense fallback={<CanvasLoader />}>
-          <PolygonalShape /> {/* Utilize the PolygonalShape component */}
+          <PolygonalShape />
         </Suspense>
         <OrbitControls
           enableZoom={false}
@@ -29,4 +29,4 @@ const ModelViewer = () => {
   );
 };
 
-export default ModelViewer;
+export default HomepageModel;
