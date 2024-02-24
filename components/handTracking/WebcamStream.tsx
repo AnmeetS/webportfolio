@@ -16,8 +16,9 @@ const WebcamStream: React.FC<WebcamStreamProps> = ({ processedData }) => {
   }, [webcamRunning, predictWebcam]);
 
   return (
-    <div className="border-2 bg-foreground border-border w-fit justify-center flex flex-col">
-      <div className="relative w-[480px] h-[360px] pointer-events-none bg-foreground border-2 border-border">
+    <div className='w-full bg-white'>
+      <div className="border-2 bg-foreground border-border w-full justify-center flex flex-col">
+      <div className="relative w-[360px] h-[270px] sml:w-[480px] sml:h-[360px] pointer-events-none bg-foreground border-2 border-border">
         <video
           ref={videoRef}
           autoPlay
@@ -37,6 +38,9 @@ const WebcamStream: React.FC<WebcamStreamProps> = ({ processedData }) => {
         {webcamRunning ? "Disable Hand Tracking" : "Enable Hand Tracking"}
       </button>
     </div>
+
+    </div>
+    
   );
 };
 

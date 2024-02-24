@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import WebcamStream from "./WebcamStream";
-import HandTrackedModel from "../3D/HandTrackedModel";
+import HandTrackedModel from "./HandTrackedModel";
 
 interface HandTrackedModelRef {
   updateModel: (
@@ -18,7 +18,7 @@ const HandtrackingTrial: React.FC = () => {
     if (data.handVisible) {
       const azimuthRange = Math.PI;
       const value = data.eighthLandmark.x - 0.5;
-      const azimuthAngle = value * 2 * azimuthRange;
+      const azimuthAngle = value * 0.75 * azimuthRange;
       const polarAngle = data.eighthLandmark.y * Math.PI;
       if (HandTrackedModelRef.current) {
         HandTrackedModelRef.current.updateModel(
@@ -32,13 +32,12 @@ const HandtrackingTrial: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-screen">
       <div className="absolute w-fit h-full">
-        <div className="py-10">
+        <div className="py-10 px-10">
           <WebcamStream processedData={handleProcessedData} />
         </div>
       </div>
-
       <HandTrackedModel ref={HandTrackedModelRef} />
     </div>
   );

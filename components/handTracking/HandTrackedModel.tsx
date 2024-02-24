@@ -2,9 +2,8 @@ import React, { useRef, useImperativeHandle, forwardRef } from 'react';
 import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
-import CanvasLoader from "./CanvasLoader";
-import { PolygonalShape } from './Shapes';
-
+import CanvasLoader from "../3D/CanvasLoader";
+import { PolygonalShape } from '../3D/Shapes';
 
 interface HandTrackedModelMethods {
   updateModel: (minAzimuthAngle: number, maxAzimuthAngle: number, maxPolarAngle: number, minPolarAngle: number) => void;
