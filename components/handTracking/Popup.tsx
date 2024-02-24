@@ -26,10 +26,49 @@ const Popup = () => {
                 className="bg-foreground/20 backdrop-blur-md p-4 shadow-navbarShadow rounded-2xl"
               >
                 <div className="relative flex flex-col gap-4">
-                  <h2 className="text-3xl font-semibold font-titleFont text-textLighter items-center justify-center flex">
-                    WARNING!
-                  </h2>
-                  <div className="flex flex-col gap-2 text-copyLighter px-2 items-center justify-center">
+                  <div>
+                    <h2 className=" xl:hidden text-3xl font-semibold font-titleFont text-textLighter items-center justify-center flex">
+                      WARNING!
+                    </h2>
+                    <h2 className=" xl:flex text-3xl font-semibold font-titleFont text-textLighter items-center justify-center hidden">
+                      Welcome to the HANDyMouse demo!
+                    </h2>
+                  </div>
+                  {/* xl or higher */}
+                  <div className="hidden xl:flex flex-col gap-2 text-copyLighter px-2 items-center justify-center">
+                    <div className="flex flex-row gap-2">
+                      <span className="text-textLighter mt-1">
+                        <FaExclamation />
+                      </span>
+                      <p>
+                        To get started, hit the button to start the hand
+                        tracking and try moving your hand around.
+                      </p>
+                    </div>
+                    <div className="flex flex-row gap-2">
+                      <span className="text-textLighter mt-1">
+                        <FaExclamation />
+                      </span>
+                      <p>
+                        Please keep in mind that this is still a work in
+                        progress demo. As a result, there are still a lot of
+                        features (panning, zooming, different models, etc.) that
+                        are not yet implemented.
+                      </p>
+                    </div>
+                    <div className="pt-4 w-full flex flex-row items-center justify-center gap-4">
+                      <div>
+                        <button
+                          onClick={() => setIsVisible(false)}
+                          className="w-auto h-auto text-sm font-monoFont border-2 border-textLighter rounded-md text-textLighter tracking-wide bg-foreground hover:bg-border duration-300 p-4"
+                        >
+                          Continue
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  {/* lower than xl */}
+                  <div className="xl:hidden flex flex-col gap-2 text-copyLighter px-2 items-center justify-center">
                     <div className="flex flex-row gap-2">
                       <span className="text-textLighter mt-1">
                         <FaExclamation />
@@ -60,12 +99,13 @@ const Popup = () => {
                     </div>
                     <div className="pt-4 w-full flex flex-row items-center justify-center gap-4">
                       <div>
+                        <Link href="/">
                           <button
-                          onClick={() => setIsVisible(false)}
                             className="w-auto h-auto text-sm font-monoFont border-2 border-textLighter rounded-md text-textLighter tracking-wide bg-foreground hover:bg-border duration-300 p-4"
                           >
-                            Continue
+                            Go Back
                           </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

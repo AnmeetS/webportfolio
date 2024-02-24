@@ -16,9 +16,9 @@ const WebcamStream: React.FC<WebcamStreamProps> = ({ processedData }) => {
   }, [webcamRunning, predictWebcam]);
 
   return (
-    <div className='w-full bg-white'>
+    <div className='w-full '>
       <div className="border-2 bg-foreground border-border w-full justify-center flex flex-col">
-      <div className="relative w-[360px] h-[270px] sml:w-[480px] sml:h-[360px] pointer-events-none bg-foreground border-2 border-border">
+      <div className="relative w-[360px] h-[270px] sml:w-[480px] sml:h-[360px] pointer-events-none bg-foreground border-2 border-border z-50">
         <video
           ref={videoRef}
           autoPlay

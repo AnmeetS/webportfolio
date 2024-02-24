@@ -4,7 +4,6 @@ import { HandLandmarker } from "@mediapipe/tasks-vision";
 import { drawConnectors, drawLandmarks } from "@mediapipe/drawing_utils";
 import { HAND_CONNECTIONS } from "./HandConnections";
 import {
-  logProcessedLandmarkData,
   processHandLandmarks,
   HandData,
 } from "./HandProcessing";

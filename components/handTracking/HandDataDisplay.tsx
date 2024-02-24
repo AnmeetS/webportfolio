@@ -2,7 +2,7 @@ import React from 'react';
 
 interface HandData {
   handVisible: boolean;
-  eighthLandmark?: { x: number; y: number; z: number };
+  indexFinger?: { x: number; y: number; z: number };
 }
 
 interface HandDataDisplayProps {
@@ -22,9 +22,9 @@ const HandDataDisplay: React.FC<HandDataDisplayProps> = ({ handData }) => (
     {handData?.handVisible && (
       <div className="">
         <div>
-          <div>the X coordinate is: {handData.eighthLandmark?.x}</div>
-          <div>the Y coordinate is: {handData.eighthLandmark?.y}</div>
-          <div>the Z coordinate is: {handData.eighthLandmark?.z}</div>
+          <div>the X coordinate is: {handData.indexFinger?.x}</div>
+          <div>the Y coordinate is: {handData.indexFinger?.y}</div>
+          <div>the Z coordinate is: {handData.indexFinger?.z}</div>
         </div>
       </div>
     )}
