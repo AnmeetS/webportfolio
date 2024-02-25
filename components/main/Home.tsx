@@ -104,8 +104,8 @@ const Banner = () => {
               learning, and embedded systems.
             </span>{" "}
             <span>
-              Along with creating aesthetic yet functional machines and web
-              applications, i&apos;m currently working on{" "}
+              In addition to creating aesthetic & functional machines and web
+              applications, I&apos;m currently working on{" "}
               <Link
                 href="https://github.com/AnmeetS/Ball-Balancer"
                 target="_blank"
@@ -118,14 +118,14 @@ const Banner = () => {
             </span>
           </motion.span>
           <div className="flex flex-col sml:flex-row items-left justify-between gap-6 z-30 w-fit">
-            <Link href="/assets/Anmeet_S_Software_Resume.pdf" target="_blank">
+            <Link href="/handymousedemo" >
               <motion.button
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.9 }}
-                className="w-32 h-12 text-lg font-titleFont font-bold border-2 border-textLighter rounded-md text-textLighter tracking-wide hover:bg-foreground duration-300"
+                className="w-auto h-auto text-sm font-monoFont border-2 border-textLighter rounded-md text-textLighter tracking-wide bg-foreground hover:bg-border duration-300 p-4"
               >
-                Resume
+                Check Out My Latest Work!
               </motion.button>
             </Link>
           </div>

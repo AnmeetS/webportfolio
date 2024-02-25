@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import WebcamStream from "./WebcamStream";
 import HandTrackedModel from "./HandTrackedModel";
+import { PiHandFist, PiHandFistBold, PiHandPalm, PiHandPalmBold, PiHandPointing, PiHandPointingBold } from "react-icons/pi";
 
 interface HandTrackedModelRef {
   updateModel: (
@@ -79,11 +80,23 @@ const HandtrackingTrial: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
       <div className="absolute w-fit h-full">
-        <div className="py-10 px-10">
+        <div className="py-10 px-10 flex flex-row ">
           <WebcamStream processedData={handleProcessedData} />
+          <div className="gap-2 flex flex-col w-auto -ml-4 text-textLight text-xl p-4 bg-foreground h-fit rounded-lg border-2 border-border z-50 shadow-navbarShadow">
+            <div className="flex flex-row gap-2">
+              Use <span className="mt-1 text-textLighter"><PiHandPointingBold />{" "}</span>
+              to rotate
+            </div>
+            <div className="flex flex-row gap-2">
+              Use <span className="mt-1 text-textLighter"><PiHandFistBold />{" "}</span> to pan
+            </div>
+            <div className="flex flex-row gap-2">
+              Use <span className="mt-1 text-textLighter "><PiHandPalmBold/>{" "}</span> to stop control
+            </div>
+          </div>
         </div>
       </div>
-        <HandTrackedModel ref={HandTrackedModelRef} />
+      <HandTrackedModel ref={HandTrackedModelRef} />
     </div>
   );
 };

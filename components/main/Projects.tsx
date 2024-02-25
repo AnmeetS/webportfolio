@@ -31,13 +31,21 @@ const Projects = () => {
         <TitleCreator title="Projects" />
       </span>
       <div className="w-full flex flex-col items-center justify-between relative">
-        <Carousel pauseOnHover slideInterval={5000} slide={false} leftControl="<" rightControl=">" className="py-4">
-          {/*<WebsiteProject />*/}
-          <MelmanProject />
-          <RubiksCubeProject />
+        <Carousel
+          pauseOnHover
+          slideInterval={5000}
+          slide={false}
+          leftControl="<"
+          rightControl=">"
+          className="py-4"
+        >
           <HandyMouseProject />
+
+          <RubiksCubeProject />
+
+          <MelmanProject />
+          {/*<WebsiteProject />*/}
         </Carousel>
-        
       </div>
     </section>
   );
