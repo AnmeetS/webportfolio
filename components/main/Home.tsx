@@ -64,16 +64,20 @@ const Banner = () => {
 
   return (
     <section id="home" className="relative">
+      <div className="absolute hidden lg:flex w-full h-full flex-col justify-center items-start lg:pr-[12%] lgl:pr-[8%] xl:pr-[15%]"> 
       <motion.div
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="hidden xl:flex absolute -left-52 -top-28 w-[188%] h-[110%] z-10 "
+        className="w-[188%] lg:h-[80%] lgl:h-full xl:h-[200%]"
       >
         <HomepageModel />
       </motion.div>
+
+      </div>
+      
       <div className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-[85vh] justify-center z-30">
-        <div className="py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-full justify-center ">
+        <div className="py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-full justify-center w-fit">
           <motion.h3
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
