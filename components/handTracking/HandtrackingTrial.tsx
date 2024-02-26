@@ -82,6 +82,13 @@ const HandtrackingTrial: React.FC = () => {
     }
   };
 
+  const resetModelPosition = () => {
+    HandTrackedModelRef.current?.resetPosition();
+    positionRef.current = { x: 0, y: 0 };
+    startPositionRef.current = { x: 0, y: 0 };
+  };
+
+
   return (
     <div className="relative w-full h-[80vh] flex flex-row gap-6 z-50">
       <div className="pt-5 pl-5 w-auto h-full">
@@ -122,7 +129,7 @@ const HandtrackingTrial: React.FC = () => {
           </div>
         </div>
         <button
-          onClick={() => HandTrackedModelRef.current?.resetPosition()}
+          onClick={resetModelPosition}
           className="w-full h-auto hover:bg-border duration-300 p-4 text-textLight font-monoFont bg-foreground border-2 border-textLighter rounded z-20"
         >
           Reset Position
