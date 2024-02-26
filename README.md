@@ -33,7 +33,6 @@ After completing the project, I felt it was important to share this advancement 
 - Developing a standalone page for each project, detailing the creation process.
 - Creating an archive page with exclusive data on all my projects.
 - Introducing a blog section connected through a backend server for faster page rendering. (Allowing me to explore SQL)
-- Integrating OpenCV to enable hand-tracking for mouse movement on my website (similiar to my recent project), offering an interactive experience with 3D model on my website.
 
 ## Stay Connected 📢
 
