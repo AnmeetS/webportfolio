@@ -5,13 +5,18 @@ import { MdOutlineClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Popup = () => {
-  // State to control the visibility of the popup
   const [isVisible, setIsVisible] = useState(true);
 
   return (
     <AnimatePresence>
       {isVisible && (
-        <div className="z-50 absolute inset-0">
+        <motion.div
+          exit={{
+            opacity: 0,
+            transition: { duration: 0.8, ease: "easeInOut" },
+          }}
+          className="z-50 absolute inset-0 bg-background/80"
+        >
           <div className="w-full h-full flex flex-row justify-center">
             <div className="w-fit flex flex-col items-center justify-center">
               <motion.div
@@ -27,15 +32,15 @@ const Popup = () => {
               >
                 <div className="relative flex flex-col gap-4">
                   <div>
-                    <h2 className=" xl:hidden text-3xl font-semibold font-titleFont text-textLighter items-center justify-center flex">
+                    <h2 className=" lg:hidden text-3xl font-semibold font-titleFont text-textLighter items-center justify-center flex">
                       WARNING!
                     </h2>
-                    <h2 className=" xl:flex text-3xl font-semibold font-titleFont text-textLighter items-center justify-center hidden">
+                    <h2 className=" lg:flex text-3xl font-semibold font-titleFont text-textLighter items-center justify-center hidden">
                       Welcome to the HANDyMouse demo!
                     </h2>
                   </div>
-                  {/* xl or higher */}
-                  <div className="hidden xl:flex flex-col gap-2 text-copyLighter px-2 items-center justify-center">
+                  {/* lg or higher */}
+                  <div className="hidden lg:flex flex-col gap-2 text-copyLighter px-2 items-center justify-center">
                     <div className="flex flex-row gap-2">
                       <span className="text-textLighter mt-1">
                         <FaExclamation />
@@ -67,8 +72,8 @@ const Popup = () => {
                       </div>
                     </div>
                   </div>
-                  {/* lower than xl */}
-                  <div className="xl:hidden flex flex-col gap-2 text-copyLighter px-2 items-center justify-center">
+                  {/* lower than lg */}
+                  <div className="lg:hidden flex flex-col gap-2 text-copyLighter px-2 items-center justify-center">
                     <div className="flex flex-row gap-2">
                       <span className="text-textLighter mt-1">
                         <FaExclamation />
@@ -100,9 +105,7 @@ const Popup = () => {
                     <div className="pt-4 w-full flex flex-row items-center justify-center gap-4">
                       <div>
                         <Link href="/">
-                          <button
-                            className="w-auto h-auto text-sm font-monoFont border-2 border-textLighter rounded-md text-textLighter tracking-wide bg-foreground hover:bg-border duration-300 p-4"
-                          >
+                          <button className="w-auto h-auto text-sm font-monoFont border-2 border-textLighter rounded-md text-textLighter tracking-wide bg-foreground hover:bg-border duration-300 p-4">
                             Go Back
                           </button>
                         </Link>
@@ -119,7 +122,7 @@ const Popup = () => {
               </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </AnimatePresence>
   );

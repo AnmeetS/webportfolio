@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 const HANDyMouseDemo = () => {
   return (
     <div className="w-full h-full overflow-hidden">
-      <div className="hidden xl:block">
+      <div className="hidden lg:block">
         <HandtrackingTrial />
       </div>
       <div className="absolute inset-0 flex flex-col justify-center">
-        <div className="xl:hidden w-full flex flex-row items-center justify-center gap-4">
+        <div className="lg:hidden w-full flex flex-row items-center justify-center gap-4">
           <div>
             <Link href="/">
               <motion.button
@@ -24,7 +24,7 @@ const HANDyMouseDemo = () => {
             </Link>
           </div>
         </div>
-        <div className="xl:flex w-full hidden flex-row items-center justify-center gap-4 mt-[80vh]">
+        <div className="lg:flex w-full hidden flex-row items-center justify-center gap-4 mt-[80vh]">
           <div>
             <Link href="/">
               <motion.button
