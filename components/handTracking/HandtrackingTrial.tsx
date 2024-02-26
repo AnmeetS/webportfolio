@@ -68,7 +68,7 @@ const HandtrackingTrial: React.FC = () => {
           const azimuthRange = Math.PI;
           const value = data.indexFinger.x - 0.5;
           const azimuthAngle = value * 0.75 * azimuthRange;
-          const polarAngle = data.indexFinger.y * Math.PI;
+          const polarAngle = -((data.indexFinger.y * Math.PI)-Math.PI);
           if (HandTrackedModelRef.current) {
             HandTrackedModelRef.current.updateModel(
               azimuthAngle,
