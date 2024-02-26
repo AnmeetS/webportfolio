@@ -14,6 +14,14 @@ After spending probably about 6-8 hours scrolling the web to try and find good e
 
 The biggest challenge of making this website was, aside from the loading bar, creating the grid that you see on the main page. The reason this was so difficult is because I honestly just didnt know how much I could really do with the React components. BUT, once I figured it out, I was able to wrap my head around the concept pretty well. If you're interested in hearing more about how the grid background works, make sure to check out the blog section of my website (coming soon hopefully)
 
+## Newest Changes 🚧
+
+### HandyMouse Project Demo 🖐️🖥️
+
+I am thrilled to introduce the latest addition to my portfolio: a demo for the **HANDyMouse** project. This feature allows users to control a 3D model through a webcam for rotating and panning, showcasing my work with Python in an accessible way. The goal for the **HANDyMouse** project was to emulate the immersive experience of modern VR headsets, which can be controlled without physical controllers, and bring a taste of that interaction to a regular computer through python code.
+
+After completing the project, I felt it was important to share this advancement not just among developers through my GitHub code, but also with a wider audience via a no-code software as a service solution. Integrating this demo on my website aims to bridge the gap between complex programming concepts and practical, user-friendly applications, pushing the boundaries of what's possible with software development.
+
 ## What I Learned 📚
 
 - Implementing good SEO practices, like SSR and lazy loading of images.
