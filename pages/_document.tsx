@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import Splashscreen from "@/components/Splashscreen";
+import Splashscreen from "@/components/unreleased/Splashscreen";
 
 export default function Document() {
   const pathname = usePathname();

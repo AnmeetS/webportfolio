@@ -14,6 +14,7 @@ const HandyMouseProject = () => {
         imageHref="https://github.com/AnmeetS/HANDymouse"
         iconLinks={[
             { icon: 'github', href: 'https://github.com/AnmeetS/HANDymouse' },]}
+            buttonText = "Try it out!" buttonHref="/handymousedemo"
       />
     </div>
   )

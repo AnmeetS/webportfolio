@@ -1,5 +1,4 @@
-import Grid from "@/components/gridbackground/Grid";
-import Testing from "@/components/gridbackground/Pattern";
+
 import React, { useEffect, useRef, useState } from 'react'; 
 import Link from "next/link";// Import your global CSS file
 import { motion } from "framer-motion";

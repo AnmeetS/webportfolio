@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { sadface } from "@/public/assets";
 import Image from "next/image";
 import { sadface2 } from "@/public/assets";
 

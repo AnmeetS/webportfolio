@@ -48,22 +48,38 @@ const CurrentlyPlaying: React.FC = () => {
 
   if (!trackInfo) {
     return (
-      <Link href="" target="_blank">
-        <div className="w-48 h-16 bg-foreground rounded-full flex-row justify-center items-center">
-          <div className="flex flex-row">
-            <div className="my-3 mx-3 text-4xl text-textLighter">
+        <div className="w-48 h-16 bg-foreground border border-textLighter rounded-full flex shadow-navbarShadow">
+          <div className="flex flex-row items-center">
+            <div className="text-4xl text-textLighter mx-3 my-3">
               <ImSpotify />
             </div>
-            <div className="mx-2 py-4 flex flex-col font-titleFont font-bold text-lg">Loading...</div>
+            <div className="flex flex-col overflow-hidden mx-1 my-2">
+              {" "}
+              {/* Tailwind overflow class */}
+              <div className="text-xs text-copyLighter font-urbanFont">
+                I&apos;m listening to
+              </div>
+              <div className="ticker w-24">
+                {" "}
+                {/* Ticker class for animation */}
+                <div className="text-sm text-bold text-copyLight font-urbanFont whitespace-nowrap">
+                  {" "}
+                  <div className="">
+                    <span>
+                      Nothing :(
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </Link>
     );
   }
 
   return (
     <Link href={trackInfo.songUrl} target="_blank">
-      <div className="w-48 h-16 bg-foreground border border-textLighter rounded-full flex">
+      <div className="w-48 h-16 bg-foreground border border-textLighter rounded-full flex shadow-navbarShadow">
         <div className="flex flex-row items-center">
           <div className="text-4xl text-textLighter mx-3 my-3">
             <ImSpotify />

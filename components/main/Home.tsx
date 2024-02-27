@@ -4,7 +4,7 @@ import Typed from "typed.js";
 import Link from "next/link";
 import ScrollAnimation from "@/public/assets/ScrollAnimation.json";
 import Lottie from "lottie-react";
-import ModelViewer from "../3D/ModelViewer";
+import HomepageModel from "../3D/HomepageModel";
 
 const Banner = () => {
   const elRef = useRef(null);
@@ -64,16 +64,20 @@ const Banner = () => {
 
   return (
     <section id="home" className="relative">
+      <div className="absolute hidden lg:flex w-full h-full flex-col justify-center items-start lg:pr-[12%] lgl:pr-[8%] xl:pr-[15%]"> 
       <motion.div
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="hidden xl:flex absolute -left-52 -top-28 w-[188%] h-[110%] z-10"
+        className="w-[188%] lg:h-[80%] lgl:h-full xl:h-[200%]"
       >
-        <ModelViewer />
+        <HomepageModel />
       </motion.div>
-      <div className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-full justify-center z-30">
-        <div className="py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-full justify-center ">
+
+      </div>
+      
+      <div className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-[85vh] justify-center z-30">
+        <div className="py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 px-4 mdl:px-10 xl:px-4 h-full justify-center w-fit">
           <motion.h3
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -104,8 +108,8 @@ const Banner = () => {
               learning, and embedded systems.
             </span>{" "}
             <span>
-              Along with creating aesthetic yet functional machines and web
-              applications, i&apos;m currently working on{" "}
+              In addition to creating aesthetic & functional machines and web
+              applications, I&apos;m currently working on{" "}
               <Link
                 href="https://github.com/AnmeetS/Ball-Balancer"
                 target="_blank"
@@ -118,14 +122,14 @@ const Banner = () => {
             </span>
           </motion.span>
           <div className="flex flex-col sml:flex-row items-left justify-between gap-6 z-30 w-fit">
-            <Link href="/assets/Anmeet_S_Software_Resume.pdf" target="_blank">
+            <Link href="/handymousedemo" >
               <motion.button
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.9 }}
-                className="w-32 h-12 text-lg font-titleFont font-bold border-2 border-textLighter rounded-md text-textLighter tracking-wide hover:bg-foreground duration-300"
+                className="w-auto h-auto text-sm font-monoFont border-2 border-textLighter rounded-md text-textLighter tracking-wide bg-foreground hover:bg-border duration-300 p-4"
               >
-                Resume
+                Check Out My Latest Work!
               </motion.button>
             </Link>
           </div>
