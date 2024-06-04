@@ -20,7 +20,7 @@ const MelmanProject = () => {
         iconLinks={[
           {
             icon: "youtube",
-            href: "https://drive.google.com/file/d/13LPS8R5R6xdTd2GWJs-4m8bapAp-xgL6/view?usp=sharing",
+            href: "/assets/videos/FRC%202023.mp4",
           },
           {
             icon: "fileExport",

@@ -12,10 +12,10 @@ const RubiksCubeProject = () => {
       functions, timers, and a solving algorithm to scan, manipulate and solve a 3x3 Rubik&apos;s Cube autonomously."
       listItem={["C++ |", "Robot C |", "Python"]}
       imageSrc={rubiksSolver}
-      imageHref="https://drive.google.com/file/d/1aWYzpqJ5ZphrVBlnGU5uONs3m6xx0Rhn/view?usp=sharing"
+      imageHref="/assets/videos/Rubik's%20Cube%20Solver.mp4"
       iconLinks={[ { icon: 'youtube', href: 'https://drive.google.com/file/d/1aWYzpqJ5ZphrVBlnGU5uONs3m6xx0Rhn/view?usp=sharing' }, { icon: 'openNewWindow', href: '/underconstruction' },]}
     />
   </div>
   )
 }
-export default RubiksCubeProject
+export default RubiksCubeProject;
