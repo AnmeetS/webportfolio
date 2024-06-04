@@ -17,6 +17,7 @@ import RubiksCubeProject from "./projectinfo/RubiksCubeProject";
 import HandyMouseProject from "./projectinfo/HandyMouseProject";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import BallBalancingRobotProject from "./projectinfo/BallBalancingRobotProject";
 
 const Projects = () => {
   return (
@@ -39,9 +40,11 @@ const Projects = () => {
           rightControl=">"
           className="py-4"
         >
+          <BallBalancingRobotProject />
+
           <HandyMouseProject />
 
-          <RubiksCubeProject />
+          {/*<RubiksCubeProject />*/}
 
           <MelmanProject />
           {/*<WebsiteProject />*/}

@@ -13,7 +13,7 @@ const Sadface = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-foreground/20 backdrop-blur-md rounded-lg p-6">
+              className="bg-foreground/80 backdrop-blur-md rounded-lg p-6">
                   <h1 className="font-titleFont text-4xl xs:text-5xl sm:text-6xl sml:text-7xl md:text-8xl mdl:text-9xl flex flex-col text-center">
                     <Image src={sadface2} alt="Theres Supposed to be a silly sadface here" className="w-80"/>
                     <span className="text-error font-bold text-4xl xs:text-5xl sm:text-6xl sml:text-7xl md:text-8xl">
@@ -21,9 +21,6 @@ const Sadface = () => {
                     </span>
                     <span className="font-bodyFont text-xl text-copyLighter flex flex-col text-center">
                       <span>This page is currently</span> <span className="text-md font-monoFont"><span className="text-secondary">🚧under development🚧</span></span>
-                    </span>
-                    <span className="font-bodyFont text-xs text-border">
-                        I&apos;m so sleepy
                     </span>
                   </h1>
               </motion.div>

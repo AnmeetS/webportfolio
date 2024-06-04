@@ -16,6 +16,19 @@ const Archive = () => {
           transition={{ delay: 0.2 }}
         >
           <ProjectCard
+            title="QBot - Rubik's Cube Solver"
+            des="A Rubik’s Cube solving robot developed as a course project. The robot utilizes a combination of sensors, motor encoders, and a solving algorithm to autonomously scan, manipulate, and solve a 3x3 Rubik’s Cube. Extensive unit testing led to a 25% increase in solving efficiency."
+            listItem={["C++ ", "Robot C ", "Python"]}
+            githubRedirect="https://github.com/AnmeetS/Q-Bot"
+            genRedirect="/assets/videos/Rubik's%20Cube%20Solver.mp4"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          <ProjectCard
             title="Sticker Detector"
             des="A custom sticker detecting vision system created for the Toyota Innovation Challenge to asses hole coverage and identify wrinkles of a circular sticker."
             listItem={["Python", "OpenCV", "PyTorch"]}
@@ -23,6 +36,7 @@ const Archive = () => {
             genRedirect="https://devpost.com/software/toyota-innovation-challenge"
           />
         </motion.div>
+        {showMore && <>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -36,7 +50,7 @@ const Archive = () => {
             genRedirect="/underconstruction"
           />
         </motion.div>
-        {showMore && <><motion.div
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}

@@ -11,5 +11,6 @@ import landing from "./images/landing.jpg";
 import toyotaChallenge from "./images/Screenshot-2023-11-10-013653.png";
 import placeholder from "./images/pngtree-gray-network-placeholder-png-image_3416659.jpg";
 import HANDyMouse from "./images/Screenshot 2024-02-04 230441.jpg";
+import BallBalancingScreenshot from "./images/BallBalancingScreenshot.png";
 
-export {melman, waterloo, school, logo, helloWorld, anmeet, sadface,rubiksSolver, landing, toyotaChallenge, sadface2, placeholder, HANDyMouse};
+export {melman, waterloo, school, logo, helloWorld, anmeet, sadface,rubiksSolver, landing, toyotaChallenge, sadface2, placeholder, HANDyMouse, BallBalancingScreenshot};

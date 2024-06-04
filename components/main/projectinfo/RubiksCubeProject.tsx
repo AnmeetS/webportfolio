@@ -13,7 +13,7 @@ const RubiksCubeProject = () => {
       listItem={["C++ |", "Robot C |", "Python"]}
       imageSrc={rubiksSolver}
       imageHref="/assets/videos/Rubik's%20Cube%20Solver.mp4"
-      iconLinks={[ { icon: 'youtube', href: 'https://drive.google.com/file/d/1aWYzpqJ5ZphrVBlnGU5uONs3m6xx0Rhn/view?usp=sharing' }, { icon: 'openNewWindow', href: '/underconstruction' },]}
+      iconLinks={[ { icon: 'youtube', href: "/assets/videos/Rubik's%20Cube%20Solver.mp4" }, { icon: 'openNewWindow', href: '/underconstruction' },]}
     />
   </div>
   )
