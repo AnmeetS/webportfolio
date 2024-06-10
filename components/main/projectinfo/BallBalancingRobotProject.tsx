@@ -18,7 +18,7 @@ const BallBalancingRobotProject = () => {
         imageHref="https://github.com/AnmeetS/Ball-Balancer"
         iconLinks={[
           { icon: "github", href: "https://github.com/AnmeetS/Ball-Balancer" },
-          { icon: "youtube", href: "https://" },
+          { icon: "youtube", href: "/assets/videos/Ball%20Balancing%20Speed%20Up%20Video.mp4" },
         ]}
       />
     </div>

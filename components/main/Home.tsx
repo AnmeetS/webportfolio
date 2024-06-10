@@ -122,7 +122,7 @@ const Banner = () => {
             </span>
           </motion.span>
           <div className="flex flex-col sml:flex-row items-left justify-between gap-6 z-30 w-fit">
-            <Link href="https://github.com/AnmeetS/Ball-Balancer" >
+            <Link href="/assets/videos/Ball%20Balancing%20Speed%20Up%20Video.mp4" >
               <motion.button
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
